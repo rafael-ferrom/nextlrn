@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
     <header
@@ -30,9 +32,10 @@ const Header = () => {
               padding: 0,
             }}
           >
-            <li>Home</li>
-            <li>Contacts</li>
-            <li> Dashboards</li>
+            <Link href="/">Home</Link>
+            <Link href="/contacts">Contacts</Link>
+            <Link href="/dashboards"> Dashboards</Link>
+            <Link href="/posts">Posts</Link>
           </ul>
         </nav>
       </div>
