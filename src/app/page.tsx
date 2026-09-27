@@ -1,9 +1,4 @@
-import { Metadata } from "next"
 
-export const metadata: Metadata = {
-  title: 'Study next Project',
-  description: 'Learning next js and your funcionalitys'
-}
 
 export default function Home(){
   return(
