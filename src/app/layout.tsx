@@ -1,13 +1,14 @@
-
-
-
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html>
-      <h1>Header</h1>
-      <body>{children}</body>
-      <h1>Footer</h1>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
