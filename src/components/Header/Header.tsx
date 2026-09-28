@@ -36,6 +36,7 @@ const Header = () => {
             <Link href="/contacts">Contacts</Link>
             <Link href="/dashboards"> Dashboards</Link>
             <Link href="/posts">Posts</Link>
+            <Link href={'/postsClient'}>Posts Clients</Link>
           </ul>
         </nav>
       </div>
