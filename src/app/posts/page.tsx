@@ -1,3 +1,5 @@
+import NameButton from "@/components/Button/Button"
+
 interface PostProps{
     id: number
     title: string
@@ -17,6 +19,7 @@ export default async function Posts(){
     console.log(data)
     return(
         <div>
+            <NameButton/>
             {data.posts.map((p) => (
                 <div key={p.id}>
                     <p >{p.title}</p>
