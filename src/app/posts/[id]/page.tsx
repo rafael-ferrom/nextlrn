@@ -6,6 +6,7 @@ interface IDetailsPostProps{
 
 export default async function DetailPost({params}:IDetailsPostProps){
 
+    // await new Promise(resolve => setTimeout(resolve,4000))
     const {id} = await params
     const response = await fetch(`https://dummyjson.com/posts/${id}`)
     const data: PostProps = await response.json()
